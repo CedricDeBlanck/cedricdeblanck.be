@@ -15,7 +15,7 @@ const Header = () => {
             
             <nav>
                 <div id="navigation">
-                    <div id="nav" className="nav" style={{display: "none"}}>
+                    <div id="nav" className="nav">
                         <ul className="nav_list">
                             <li className="nav_item">
                                 <NavLink  to={Routes.LANDING} isActive={checkActive} className="nav-link" activeClassName="active">Home</NavLink>

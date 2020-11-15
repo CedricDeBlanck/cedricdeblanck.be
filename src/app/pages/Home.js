@@ -1,4 +1,3 @@
-import face from "../assets/images/face.jpg";
 import logo from "../assets/images/logo.svg";
 import { Header } from "../components/layout"; 
 import { useState } from "react";
@@ -54,38 +53,53 @@ const Navigation = styled.div`
     z-index: 2;
 `
 
+document.addEventListener("mousemove", parallax);
+function parallax(e) {
+    let logo = document.querySelector('.logo');
+    const speed = logo.getAttribute('data-speed');
+
+    const x = (window.innerWidth - e.pageX*speed)/100
+    const y = (window.innerHeight - e.pageY*speed)/100
+
+    logo.style.transform = `rotate(-45deg) translateY(-30%) translateX(${x}px) translateY(${y}px)`
+
+}
+
 const Home = () => {
 
     const [open, setOpen] = useState(false);
 
     return (
-        <header>
-            <nav>
-                
-                <Hamburger open={open} onClick={() => { setOpen(!open); }}>
-                    <div />
-                    <div />
-                    <div />
-                </Hamburger>
+        <div>
+                <nav>
+                    
+                    <Hamburger open={open} onClick={() => { setOpen(!open); }}>
+                        <div />
+                        <div />
+                        <div />
+                    </Hamburger>
 
-                <Navigation className="navigation" open={open}>
-                    <div>
-                        <nav>
-                            <Header />
-                        </nav>
+                    <Navigation className="navigation" open={open}>
+                        <div>
+                            <nav>
+                                <Header />
+                            </nav>
+                        </div>
+                    </Navigation>
+                </nav>
+                <section>
+                    <div className="photo--section">
+                        <h1 className="headline">Cédric De Blanck</h1>
                     </div>
-                </Navigation>
-            </nav>
-            <section className="animate__fadeInLeft">
-                <div className="photo--section">
-                    <h1 className="headline">Cédric De Blanck</h1>
-                </div>
-            </section>
-            <div className="mouse-scroll">
-                <div className="mouse-line"></div>
+                </section>
+                <a href="#about" className="mouse-scroll">
+                    <div className="mouse-line"></div>
+                </a>
+                <div className="background"><img className="logo animate__bounceInLeft" data-speed="2" id="logo" src={logo} alt="logo"></img></div>
+            <div id="about">
+
             </div>
-            <div className="background"><img className="animate__bounceInLeft" id="logo" src={logo}></img></div>
-        </header>
+        </div>
     );
 };
 
