@@ -90,3 +90,12 @@ section {
     100% { transform: translateY(15px); opacity: 0;}
 }
 
+
+@media only screen and (max-width: 600px) {
+    .headline {
+        max-width: fit-content;
+        font-size: 32px;
+        width: 100%;
+        left: calc(50vw - 123px);
+    }
+  }
