@@ -84,6 +84,14 @@ section {
     }
 }
 
+#about {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    top: 100vh;
+}
+
 @keyframes scroll {
     0% { opacity: 0; }
     10% { transform: translateY(0); opacity: 1; }
@@ -93,9 +101,8 @@ section {
 
 @media only screen and (max-width: 600px) {
     .headline {
-        max-width: fit-content;
         font-size: 32px;
-        width: 100%;
+        max-width: 80vw;
         left: calc(50vw - 123px);
     }
   }

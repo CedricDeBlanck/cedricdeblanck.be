@@ -74,9 +74,9 @@ const Home = () => {
                 <nav>
                     
                     <Hamburger open={open} onClick={() => { setOpen(!open); }}>
-                        <div />
-                        <div />
-                        <div />
+                        <div className="firstham" />
+                        <div className="secondham" />
+                        <div className="thirdham" />
                     </Hamburger>
 
                     <Navigation className="navigation" open={open}>
