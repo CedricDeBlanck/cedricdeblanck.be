@@ -8,8 +8,7 @@ const Home = () => {
                 <div className="hamburger">
                     <button onClick={(e) => {
                         e.preventDefault();                    
-                    }} className="hamburger hamburger--elastic" type="button"
-                            aria-label="Menu" aria-controls="navigation" aria-expanded="true/false">
+                    }} className="hamburger hamburger--elastic" type="button">
                         <span className="hamburger-box">
                         <span className="hamburger-inner"></span>
                         </span>
