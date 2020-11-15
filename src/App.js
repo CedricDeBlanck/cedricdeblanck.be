@@ -1,5 +1,5 @@
 import { Home, Aboutme, Portfolio } from './app/pages';
-import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Redirect, Switch } from 'react-router-dom';
 import { BaseLayout } from './app/layouts';
 import { RouteWithLayout } from './app/utilities';
 import * as Routes from './app/routes';

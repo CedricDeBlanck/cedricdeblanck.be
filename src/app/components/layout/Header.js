@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import * as Routes from '../../routes';
 import '@animated-burgers/burger-squeeze/dist/styles.css' 
-import { Power1, Power2, Power3, TimelineMax } from "gsap";
+import { Power1, Power3, TimelineMax } from "gsap";
 const checkActive = (match, location) => {
     if(!location) return false;
     const {pathname} = location;
@@ -9,10 +9,10 @@ const checkActive = (match, location) => {
 } 
 
 const hero = document.querySelector('.hero');
-const slider = document.querySelector('.slider');
-const logo = document.querySelector('#logo');
-const hamburger = document.querySelector('.hamburger');
-const headline = document.querySelector('.headline');
+// const slider = document.querySelector('.slider');
+// const logo = document.querySelector('#logo');
+// const hamburger = document.querySelector('.hamburger');
+// const headline = document.querySelector('.headline');
 
 const tl = new TimelineMax();
 tl.fromTo(hero, 1, { height: "0%"} ,{ height: "60%", ease: Power1.easeInOut})
