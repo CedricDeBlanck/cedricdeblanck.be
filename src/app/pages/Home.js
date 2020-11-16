@@ -1,4 +1,5 @@
 import logo from "../assets/images/logo.svg";
+import face from "../assets/images/face.jpg";
 import { Header } from "../components/layout"; 
 import { useState } from "react";
 import styled from 'styled-components';
@@ -93,6 +94,7 @@ const Home = () => {
                 </nav>
                 <section>
                     <div className="photo--section">
+                        <img className="itsMe" src={face}></img>
                         <h1 className="headline">Cédric De Blanck</h1>
                     </div>
                 </section>
@@ -101,7 +103,7 @@ const Home = () => {
                 </a>
                 <div className="background"><img className="logo" data-speed="2" id="logo" src={logo} alt="logo"></img></div>
             <div id="about">
-
+                
             </div>
         </div>
     );

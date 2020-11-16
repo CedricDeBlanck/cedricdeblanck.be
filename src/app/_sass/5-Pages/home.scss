@@ -40,12 +40,6 @@ section {
     z-index: 0;
 }
 
-.photo--section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .headline {
     position: absolute;
     top:80%;
@@ -86,9 +80,14 @@ section {
 #about {
     width: 100vw;
     height: 100vh;
-    background: white;
     position: absolute;
-    top: 100vh;
+}
+
+.itsMe {
+    width: 350px;
+    margin-left: 130%;
+    transform: translateY(50%) translateX(-50%);
+    border: 1px solid white;
 }
 
 @keyframes scroll {
@@ -104,9 +103,19 @@ section {
         max-width: 80vw;
         left: 50%;
         transform: translateX(-50%);
+        margin-top: -50px;
     }
 
     .mouse-scroll {
-        top: 86vh;
+        margin-top: -50px;
+    }
+
+    .itsMe {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        width: 200px;
+        margin-top: 200px;
     }
   }
