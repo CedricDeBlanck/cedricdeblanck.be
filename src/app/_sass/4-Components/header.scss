@@ -33,3 +33,9 @@ nav {
         }
     }
 }
+
+@media only screen and(max-width: 600px) {
+    .nav_list {
+        transform: translateY(0%);
+    }
+}

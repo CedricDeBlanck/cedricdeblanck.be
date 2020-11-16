@@ -11,13 +11,7 @@ const checkActive = (match, location) => {
 
 const Header = () => {
     return (
-
-
-        
-        
         <div className="header">
-            
-            
             <nav>
                 <div id="navigation">
                     <div id="nav" className="nav">
