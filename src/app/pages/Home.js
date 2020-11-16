@@ -7,8 +7,8 @@ import 'animate.css';
 const Hamburger = styled.div`
     width: 2rem;
     height: 2rem;
-    position: fixed;
     top: 15px;
+    position: absolute;
     right: 20px;
     display: flex;
     justify-content: space-around;
