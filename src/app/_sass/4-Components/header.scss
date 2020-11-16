@@ -2,8 +2,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    position: fixed;
+    z-index: 1000;
     .navigation {
         width: 100vw;
         height: 100vh;
@@ -16,6 +18,7 @@ nav {
                 flex-direction: column;
                 margin-top: 50%;
                 justify-content: space-around;
+                transform: translateX(30%);
                 .nav_item {
                     width: 300px;
                     margin-top: 10vh;
@@ -31,6 +34,12 @@ nav {
             }
         }
     }
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
 
 @media only screen and(max-width: 600px) {

@@ -29,7 +29,7 @@ const Hamburger = styled.div`
         }
 
         &:nth-child(2) {
-            transform: ${({ open }) => open ? 'translateX(150%)' : 'translateX(0)'};
+            transform: ${({ open }) => open ? 'translateX(-150%)' : 'translateX(0)'};
             opacity: ${({ open }) => open ? '0' : '1'};
             margin-left: 5px;
         }
