@@ -4,4 +4,32 @@ nav {
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
+    .navigation {
+        width: 100vw;
+        height: 100vh;
+        .nav {
+            width: 100%;
+            height: 100%;
+            .nav_list {
+                display: flex;
+                list-style: none;
+                flex-direction: column;
+                margin-top: 50%;
+                transform: translateY(50%);
+                justify-content: space-around;
+                .nav_item {
+                    width: 300px;
+                    margin-top: 10vh;
+                    a {
+                        width: fit-content;
+                        color: $white;
+                        text-decoration: none;
+                        font-size: 40px;
+                        text-transform: uppercase;
+                        font-family: $rubik;
+                    }
+                }
+            }
+        }
+    }
 }

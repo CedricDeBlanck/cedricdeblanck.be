@@ -11,7 +11,12 @@ const checkActive = (match, location) => {
 
 const Header = () => {
     return (
+
+
+        
+        
         <div className="header">
+            
             
             <nav>
                 <div id="navigation">
@@ -19,14 +24,17 @@ const Header = () => {
                         <ul className="nav_list">
                             <li className="nav_item">
                                 <NavLink  to={Routes.LANDING} isActive={checkActive} className="nav-link" activeClassName="active">Home</NavLink>
+                                <p></p>
                             </li>
 
                             <li className="nav_item">
                                 <NavLink  to={Routes.ABOUTME} className="nav-link" activeClassName="active">About me</NavLink>
+                                <p></p>
                             </li>
 
                             <li className="nav_item">
                                 <NavLink  to={Routes.PORTFOLIO} className="nav-link" activeClassName="active">Portfolio</NavLink>
+                                <p></p>
                             </li>
                         </ul>
                     </div>
