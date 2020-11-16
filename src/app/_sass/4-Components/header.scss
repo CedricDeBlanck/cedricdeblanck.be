@@ -15,7 +15,6 @@ nav {
                 list-style: none;
                 flex-direction: column;
                 margin-top: 50%;
-                transform: translateY(50%);
                 justify-content: space-around;
                 .nav_item {
                     width: 300px;
@@ -35,7 +34,5 @@ nav {
 }
 
 @media only screen and(max-width: 600px) {
-    .nav_list {
-        transform: translateY(0%);
-    }
+
 }
