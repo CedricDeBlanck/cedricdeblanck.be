@@ -64,7 +64,8 @@ section {
     border-radius: 20px;
     position: absolute;
     top: 90vh;
-    left: calc(50% - 10px);
+    left: 50%;
+    transform: translateX(-50%);
     border: 1px solid white;
     justify-content: center;
     align-content: center;
@@ -96,7 +97,6 @@ section {
     100% { transform: translateY(15px); opacity: 0;}
 }
 
-
 @media only screen and (max-width: 600px) {
     .headline {
         width: fit-content;
@@ -104,5 +104,9 @@ section {
         max-width: 80vw;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    .mouse-scroll {
+        top: 86vh;
     }
   }
