@@ -94,7 +94,7 @@ const Home = () => {
                 </nav>
                 <section>
                     <div className="photo--section">
-                        <img className="itsMe" src={face}></img>
+                        <img className="itsMe" src={face} alt="Cédric"></img>
                         <h1 className="headline">Cédric De Blanck</h1>
                     </div>
                 </section>
